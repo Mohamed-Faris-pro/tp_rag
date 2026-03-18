@@ -1,4 +1,4 @@
-Voici une proposition complète pour ton fichier **README.md**, structurée de manière professionnelle et basée sur le contenu de ton notebook **RAGV2.ipynb**. Tu peux copier et coller ce texte directement sur ton dépôt GitHub.
+Voici le fichier **README.md** mis à jour. J'ai ajouté une section **"Aperçu et Résultats"** avec des emplacements pour tes captures d'écran, ainsi que des instructions pour les intégrer.
 
 ***
 
@@ -15,19 +15,28 @@ Le but de ce projet est de dépasser les limites intrinsèques des LLM (comme la
 * **Génération enrichie** : Utilisation de l'API OpenAI pour générer des réponses basées uniquement sur le contexte fourni.
 * **Évaluation RAG** : Mise en place d'une méthodologie "LLM-as-a-judge" pour évaluer la pertinence de la récupération et de la génération.
 
-## 🚀 Fonctionnalités
+## 🚀 Aperçu et Résultats
 
--   **Pipeline RAG complet** : Chargement, découpage (chunking), vectorisation et stockage des documents.
--   **Base de données vectorielle** : Utilisation de ChromaDB pour le stockage des embeddings.
--   **Interface de requête** : Système capable de répondre à des questions complexes sur les performances financières de l'OCP en 2023.
--   **Métriques d'évaluation** : Vérification automatique de la fidélité de la réponse par rapport au contexte.
+*Cette section illustre le fonctionnement du système RAG étape par étape.*
+
+### 1. Chargement et Vectorisation
+Le système découpe le document PDF en segments (chunks) et les transforme en vecteurs numériques stockés dans une base de données.
+> **[IMAGE : Capture d'écran du code de chargement du PDF ou de la création de la base de données]**
+
+### 2. Requête et Récupération (Retrieval)
+Lorsqu'une question est posée, le système retrouve les passages les plus pertinents dans le document.
+> **[IMAGE : Capture montrant les "chunks" de texte récupérés pour une question donnée]**
+
+### 3. Réponse Générée et Jugement (Evaluation)
+Le modèle génère une réponse finale et une étape d'auto-évaluation vérifie si la réponse est bien présente dans le contexte fourni.
+> **[IMAGE : Capture du résultat final montrant la question, la réponse et l'avis du "Judge"]**
 
 ## 🛠️ Technologies utilisées
 
 * **Langage** : Python 3.x
 * **Framework** : LangChain
 * **LLM & Embeddings** : OpenAI (GPT-3.5/4)
-* **Vector Store** : ChromaDB / VectorStore
+* **Vector Store** : ChromaDB
 * **Notebook** : Jupyter / Google Colab
 
 ## ⚙️ Installation et Configuration
@@ -39,33 +48,34 @@ cd votre-repo-rag
 ```
 
 ### 2. Installation des dépendances
-Il est recommandé d'utiliser un environnement virtuel :
 ```bash
 pip install langchain openai chromadb pypdf tiktoken
 ```
 
 ### 3. Variables d'environnement
-Créez un fichier `.env` à la racine du projet (ajoutez-le à votre `.gitignore`) et ajoutez votre clé API OpenAI :
+Créez un fichier `.env` à la racine du projet et ajoutez votre clé API OpenAI :
 ```text
 OPENAI_API_KEY=votre_cle_api_ici
 ```
-*Note : Un fichier `.env.example` est fourni comme modèle.*
+*Note : Le fichier `.env` est ignoré par Git pour des raisons de sécurité.*
 
 ## 📖 Utilisation
 
 1.  Ouvrez le notebook `RAGV2.ipynb`.
-2.  Assurez-vous que le document PDF (ex: `Rapport Financier Annuel OCP 2023.pdf`) est présent dans le répertoire indiqué.
-3.  Exécutez les cellules pour initialiser le `VectorStore` et lancer les requêtes.
-4.  La fonction `RAG(query)` centralise la logique de récupération et de réponse.
-
-## 📊 Évaluation
-
-Le projet inclut une section dédiée à l'évaluation du système où le modèle s'auto-évalue selon deux axes :
-1.  **Retrieval** : Le contexte récupéré contient-il la réponse ?
-2.  **Generation** : La réponse est-elle strictement basée sur le contexte fourni ?
+2.  Assurez-vous que le document PDF est présent dans le répertoire.
+3.  Exécutez les cellules pour initialiser le `VectorStore` et lancer les requêtes via la fonction `RAG(query)`.
 
 ---
 
 **Auteur :** [Ton Nom]
 **École :** École Marocaine des Sciences de l'Ingénieur (EMSI)
 **Spécialisation :** IA & Data Science
+
+***
+
+### Comment insérer tes images concrètement :
+Pour remplacer les lignes en gras par tes vraies images, utilise cette syntaxe :
+`![Description de l'image](le_nom_de_ton_image.png)`
+
+Si tu as créé un dossier `screenshots`, utilise :
+`![Résultat final](screenshots/resultat.png)`
