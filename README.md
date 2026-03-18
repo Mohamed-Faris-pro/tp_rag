@@ -24,11 +24,16 @@ Le système découpe le document PDF en segments (chunks) et les transforme en v
 
 ### 2. Requête et Récupération (Retrieval)
 Lorsqu'une question est posée, le système retrouve les passages les plus pertinents dans le document.
-> **[IMAGE : Capture montrant les "chunks" de texte récupérés pour une question donnée]**
+> <img width="734" height="86" alt="image" src="https://github.com/user-attachments/assets/0df05742-27a5-426d-9efc-26f3e8deb9be" />
+
 
 ### 3. Réponse Générée et Jugement (Evaluation)
 Le modèle génère une réponse finale et une étape d'auto-évaluation vérifie si la réponse est bien présente dans le contexte fourni.
-> **[IMAGE : Capture du résultat final montrant la question, la réponse et l'avis du "Judge"]**
+> <img width="733" height="113" alt="image" src="https://github.com/user-attachments/assets/a32955ae-166c-4505-a169-f7990b76b864" />
+> <img width="735" height="272" alt="image" src="https://github.com/user-attachments/assets/84f5d1e4-9c1b-49af-b187-76876cf77c6c" />
+> <img width="771" height="287" alt="image" src="https://github.com/user-attachments/assets/d17196ce-9909-433e-9a47-40f717d88541" />
+
+
 
 ## 🛠️ Technologies utilisées
 
