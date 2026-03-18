@@ -29,7 +29,7 @@ Lorsqu'une question est posée, le système retrouve les passages les plus perti
 
 ### 3. Réponse Générée et Jugement (Evaluation)
 Le modèle génère une réponse finale et une étape d'auto-évaluation vérifie si la réponse est bien présente dans le contexte fourni.
-> <img width="733" height="113" alt="image" src="https://github.com/user-attachments/assets/a32955ae-166c-4505-a169-f7990b76b864" />
+> <img width="740" height="116" alt="image" src="https://github.com/user-attachments/assets/72c21e4f-dd11-42f1-9f49-ba35caa13784" />
 > <img width="735" height="272" alt="image" src="https://github.com/user-attachments/assets/84f5d1e4-9c1b-49af-b187-76876cf77c6c" />
 > <img width="771" height="287" alt="image" src="https://github.com/user-attachments/assets/d17196ce-9909-433e-9a47-40f717d88541" />
 
