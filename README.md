@@ -19,7 +19,8 @@ Le but de ce TP est de dépasser les limites intrinsèques des LLM (comme la dat
 
 ### 1. Chargement et Vectorisation
 Le système découpe le document PDF en segments (chunks) et les transforme en vecteurs numériques stockés dans une base de données.
-> **[IMAGE : Capture d'écran du code de chargement du PDF ou de la création de la base de données]**
+> <img width="737" height="81" alt="image" src="https://github.com/user-attachments/assets/624ae46f-25e0-4ec3-97f4-6d9b1bfa396e" />
+
 
 ### 2. Requête et Récupération (Retrieval)
 Lorsqu'une question est posée, le système retrouve les passages les plus pertinents dans le document.
