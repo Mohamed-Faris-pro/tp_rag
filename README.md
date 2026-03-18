@@ -1,7 +1,5 @@
-Voici le fichier **README.md** mis à jour. J'ai ajouté une section **"Aperçu et Résultats"** avec des emplacements pour tes captures d'écran, ainsi que des instructions pour les intégrer.
 
 ***
-
 # Information Retrieval : RAG (Retrieval Augmented Generation)
 
 Ce projet est un Travail Pratique (TP) réalisé dans le cadre du cycle d'ingénierie à l'**EMSI**. Il explore la mise en œuvre d'un système de **Génération Augmentée par Récupération (RAG)** pour améliorer les capacités de réponse d'un Grand Modèle de Langage (LLM) en utilisant des sources de données externes.
