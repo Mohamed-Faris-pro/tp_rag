@@ -33,6 +33,22 @@ Le modèle génère une réponse finale et une étape d'auto-évaluation vérifi
 > <img width="735" height="272" alt="image" src="https://github.com/user-attachments/assets/84f5d1e4-9c1b-49af-b187-76876cf77c6c" />
 > <img width="771" height="287" alt="image" src="https://github.com/user-attachments/assets/d17196ce-9909-433e-9a47-40f717d88541" />
 
+C'est une excellente idée. L'ajout de **Streamlit** montre que ton projet n'est pas seulement un script de recherche, mais une véritable application interactive.
+
+Voici le bloc à insérer dans ton **README.md**, juste après la section "Utilisation" ou dans une nouvelle section "Interface Utilisateur".
+
+***
+
+### 🖥️ Interface Utilisateur (Streamlit)
+Pour une expérience plus interactive, le projet inclut une interface Web développée avec **Streamlit**. Elle permet de charger le document, de poser des questions via un chat et de visualiser les sources en temps réel.
+
+**Lancement de l'application :**
+```bash
+streamlit run rag.py
+```
+
+> <img width="959" height="404" alt="image" src="https://github.com/user-attachments/assets/e914bc46-d0ab-4df8-97a3-51ccba470e19" />
+
 
 
 ## 🛠️ Technologies utilisées
@@ -41,6 +57,7 @@ Le modèle génère une réponse finale et une étape d'auto-évaluation vérifi
 * **Framework** : LangChain
 * **LLM & Embeddings** : OpenAI (GPT-X)
 * **Vector Store** : ChromaDB
+* **Interface** : Streamlit
 
 ## ⚙️ Installation et Configuration
 
